@@ -2,39 +2,14 @@
   <div id="app">
 
     <div class="main-view view-container">
-      <div class="column left-column">
-        <!-- bar name header -->
-        <h1 class="main-title">
-          <span>Welcome to</span>
-          <br>
-          <span class="title">{{barName.split(" ").join("\n")}}</span>
-        </h1>
-        <!-- drink special section -->
-        <div class="drink-special">
-          <h4>Drink Special</h4>
-          <p>{{drinkSpecial.map(x => x.name).join(", ")}}</p>
-        </div>
-      </div>
-
       <div class="column center-column">
         <bar-space />
       </div>
-
-      <div class="column right-column">
-          <h2 class="sprint-title">
-            <span class="title">{{ season.name }}&nbsp;{{week.name}}</span>
-          </h2>
-        <game-stats-section v-if="currentView == 'main'"/>
-      </div>
-
     </div><!-- main view -->
 
     <div v-if="currentView != 'main'" class="modal-sections">
       <div class="modal-container">
         <intro-section v-if="currentView == 'intro'" />
-        <bartender-selection-section v-if="currentView == 'bartender-selection'" />
-        <drink-building-section v-if="currentView == 'drink-building'"/>
-        <season-summary-section v-if="currentView == 'season-summary'" />
         <end-section v-if="currentView == 'end'" />
       </div>
     </div>
@@ -53,34 +28,20 @@ import AppStore from './AppStore'
 import { debug } from './utilities'
 
 import IntroSection from './components/IntroSection.vue'
-import BartenderSelectionSection from './components/BartenderSelectionSection.vue'
-import DrinkBuildingSection from './components/DrinkBuildingSection.vue'
-import GameStatsSection from './components/GameStatsSection.vue'
-import SeasonSummarySection from './components/SeasonSummarySection.vue'
-import EndingSection from './components/EndSection.vue'
 
 import AnnouncementView from './components/Announcement.vue'
-import AssetView from './components/Asset.vue'
 import BartenderView from './components/Bartender.vue'
 import BartenderCharacterView from './components/BartenderCharacter.vue'
-import PatronCharacterView from './components/PatronCharacter.vue'
 import BarSpaceView from './components/BarSpace.vue'
 
 export default Vue.extend({
   name: 'App',
   components: {
     IntroSection,
-    BartenderSelectionSection,
-    DrinkBuildingSection,
-    GameStatsSection,
-    SeasonSummarySection,
-    EndingSection,
 
     AnnouncementView, 
-    AssetView, 
     BartenderView,
     BartenderCharacterView,
-    PatronCharacterView,
     BarSpaceView
   },
  created: function () {
@@ -107,18 +68,12 @@ export default Vue.extend({
   },
   computed: Vuex.mapState({
     announcements: function (state: AppState) { return state.announcements },
-    barName: function (state: AppState) { return state.barName },
     currentView: function (state: AppState) { return state.currentView },
-    drinkSpecial: function(state: AppState) { return state.drinkSpecial },
     season: function (state: AppState) { 
-      if(state.currentSeasonIndex == -1) {
-        return state.seasons[0]
+      if(state.currentSceneIndex == -1) {
+        return state.scenes[0]
       }
-      return state.seasons[state.currentSeasonIndex] 
-    },
-    week: function (state: AppState) { 
-      console.log('week index', state.currentWeekIndex)
-      return state.weeks[state.currentWeekIndex] 
+      return state.scenes[state.currentSceneIndex] 
     },
     countdownProgress: function (state: AppState) { return state.countdownProgress },
     progress: function (state: AppState) { return state.progress },
