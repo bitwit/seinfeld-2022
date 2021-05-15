@@ -1,50 +1,77 @@
-import EventCard from './classes/EventCard'
-import Scene from './classes/Scene'
-import Character from './classes/Character'
-import CSVtoJSON  from 'csvtojson'
 import { httpGet } from './utilities'
+import CSVtoJSON  from 'csvtojson'
+import Event from './classes/EventCard'
+import Character from './classes/Character'
+import EventDialogue from './classes/EventDialogue'
+import Commercial from './classes/Commercial'
 
 export default class AppState {
 
-  scenes: Scene[] = [
-    new Scene("1", "Intro"),
-    new Scene("2", "Apartment"),
-    new Scene("3", "Apartment"),
-    new Scene("4", "Apartment"),
-    new Scene("5", "Apartment")
-  ]
-  characters: Character[] = []
-  events: EventCard[] = []
+  characters = {
+    jerry: new Character("jerry", 20, 0),
+    george: new Character("george", 30, 0),
+    elaine: new Character("elaine", 60, 0),
+    kramer: new Character("kramer", 10, 0)
+  }
+
+  charactersInScene: Character[] = []
+
+  events: Event[] = []
+  eventDialogue: {[eventId: string]: EventDialogue[]} = {}
+  commercials: Commercial[] = []
 
   currentView = 'intro'
-  announcements: EventCard[] = []
+  eventPresentationQueue: Event[] = []
+  currentlyDisplayedEvent: Event | null = null
+  currentDialogueQueue: EventDialogue[] = []
+  currentlyDisplayedDialogue: EventDialogue | null = null
+  currentlyDisplayedCommercial: Commercial | null = null
 
-  currentSceneIndex = -1
+  currentSceneIndex = 0
 
   // Timer related
   progress: number = 0
-  progressInterval: number = 0.25
-  tickSpeed: number = 20
+  progressInterval: number = 1
+  maxProgressBeforeNextEvent: number = 2
+  tickSpeed: number = 1000
   isPaused: boolean = false
-  countdownProgress: number = 0
 
   constructor() {
+
+    this.charactersInScene = []
+
     /* CSV Loading */
-    let characters = httpGet('./data/TOGAMEJAM2020 - Bartenders.csv')
-    let events = httpGet('./data/TOGAMEJAM2020 - Events.csv')
+    let events = httpGet('./data/TOJAM2021 - Seinfeld 2022 - Events.csv')
+    let dialogue = httpGet('./data/TOJAM2021 - Seinfeld 2022 - EventDialogue.csv')
+    let commercials = httpGet('./data/TOJAM2021 - Seinfeld 2022 - Commercials.csv')
 
     Promise.all([
-      CSVtoJSON().fromString(characters),
-      CSVtoJSON().fromString(events)
+      CSVtoJSON().fromString(events),
+      CSVtoJSON().fromString(dialogue),
+      CSVtoJSON().fromString(commercials),
     ])
-    .then(([characters, events]) => {
-      for(let data of characters) {
-        this.characters.push(new Character(data))
-      }
+    .then(([events, dialogue, commercials]) => {
       let cleanEvents = events.filter((x:any) => { return x.id != "" })
       for(let data of cleanEvents) {
-        this.events.push(new EventCard(data))
+        this.events.push(new Event(data))
       }
+      console.log("events", this.events)
+
+      let cleanDialogue = dialogue.filter((x:any) => { return x.eventId != "" })
+      for(let data of cleanDialogue) {
+        if (this.eventDialogue[data.eventId] != null) {
+          this.eventDialogue[data.eventId].push(new EventDialogue(data))
+        } else {
+          this.eventDialogue[data.eventId] = [new EventDialogue(data)]
+        }
+      }
+      console.log("dialogue", this.eventDialogue)
+
+      let cleanCommercials = commercials.filter((x:any) => { return x.id != "" })
+      for(let data of cleanCommercials) {
+        this.commercials.push(new Commercial(data))
+      }
+      console.log("commercials", this.commercials)
     })
   }
 }

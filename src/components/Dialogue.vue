@@ -1,29 +1,37 @@
 <template>
-    <div :class="typeClass" class="announcement">
-    <p class="description">{{event.text}}</p>
+    <div :class="typeClass" class="dialogue">
+      <img 
+        class="character-head" 
+        :src="'./img/' + dialogue.character + '-' + imageName + '.png'"
+        />
+      <p class="description">{{dialogue.says}}</p>
 
-    <button :class="typeClass" @click="acceptEvent()" class="accept">
-      <span class="title">Next</span>
-      <br>
-      <span class="hotkey-button">space</span>
-    </button>
+      <button :class="typeClass" @click="acceptEvent()" class="accept">
+        <span class="title">Next</span>
+        <br>
+        <span class="hotkey-button">space</span>
+      </button>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import Vuex from 'vuex'
 
-export default Vue.component('announcement', {
+export default Vue.component('dialogue', {
   props: {
-    event: Object
+    dialogue: Object
   },
-  computed: {
+  computed: Vuex.mapState({
     typeClass: function () {
       const obj: any = {}
-      obj[`type-${this.event.id}`] = true
+      obj[`type-${this.dialogue.id}`] = true
       return obj
+    },
+    imageName: function () {
+      return this.dialogue.expression || 'neutral'
     }
-  },
+  }),
   methods: {
     acceptEvent: function () {
       this.$emit('accept-event')
@@ -41,21 +49,21 @@ $browser-context: 16; // Default
 }
 
 /* line 541, style.sass */
-div.announcements {
+div.dialogues {
   position: absolute;
   z-index: 9999;
   width: 90%;
-  height: 50%;
-  top: 25%;
-  left: 5%; 
+  height: 30%;
+  bottom: em(10);
+  left: 5%;
 }
+  /* line 549, style.sass */
+  div.dialogues.displaying-false {
+    display: none;
+    pointer-events: none; }
 
-div.announcements.displaying-false {
-  display: none;
-  pointer-events: none; 
-}
-
-div.announcement {
+/* line 553, style.sass */
+div.dialogue {
   box-sizing: border-box;
   border-width: 0.625em;
   border-style: solid;
@@ -65,31 +73,40 @@ div.announcement {
   background-color: #FFF;
   text-align: left; 
 
+  img.character-head {
+    float: left;
+    width: 6%;
+    margin-right: 2%;
+  }
+  
   p.description {
-    font-size: 1.75em;
+    float: left;
+    font-size: em(24);
     color: #333;
     padding: 0;
     margin: 0;
-    text-align: center;
+    width: 72%;
   }
 }
 
-div.announcement button.accept, div.announcement button.reject {
-  display: block;
-  outline: none;
-  cursor: pointer;
-  font-size: 1em;
-  font-weight: bold;
-  padding: 0.625em 0;
-  border: 0.125em dotted inherit;
-  -moz-border-radius: 0.25em;
-  -webkit-border-radius: 0.25em;
-  border-radius: 0.25em;
-  width: 20.0%;
-  background: none; 
-  margin: 0 auto;
-}
+  /* line 593, style.sass */
+  div.dialogue button.accept, div.dialogue button.reject {
+    float: left;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    // margin: 1.25em 0;
+    padding: 0.625em 0;
+    border: 0.125em dotted inherit;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+    width: 20.0%;
+    background: none; 
+    }
 
+/* line 623, style.sass */
 .hotkey-button {
   line-height: 1.5em;
   border: 1px solid gray;
@@ -111,7 +128,7 @@ div.announcement button.accept, div.announcement button.reject {
   background: linear-gradient(to right, #ffffff 0%, #e2e2e2 25%); }
 
 @media only screen and (max-width: 1024px) {
-  .announcement {
+  .dialogue {
     font-size: em(9)
   }
 }

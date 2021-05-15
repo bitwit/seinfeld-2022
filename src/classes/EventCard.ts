@@ -1,46 +1,27 @@
 import AppState from '../AppState'
 
-export default class EventCard {
+export default class Event {
   id: string
-  name: string
   character: string
+  text: string
+  scene: number
   expression: string | null
   image: string | null
-  text: string
-  acceptText: string
+  enters: boolean
+  leaves: boolean
+  moveToWindow: boolean
+  moveFromWindow: boolean
 
   constructor(data: any) {
     this.id = data.id
-    this.name = data.name
     this.character = data.character
     this.text = data.text
+    this.scene = parseInt(data.scene || 0)
     this.expression = data.expression
     this.image = data.image
-  
-    this.acceptText = data.acceptText == "" ? "OK" : data.acceptText
+    this.enters = (data.enters == "1")
+    this.leaves = (data.leaves == "1")
+    this.moveToWindow = (data.moveToWindow == "1")
+    this.moveFromWindow = (data.moveFromWindow == "1")
   }
-
-  hasBusinessMetConditions(
-    state: AppState
-  ): boolean {
-
-    return true
-  }
-
-  tick(): void {
-
-  }
-
-  onAccept(state: AppState) {
-
-  }
-
-  onReject(state: AppState) {
-
-  }
-
-  onDestroy() {
-
-  }
-
 }

@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import AppState from './AppState'
-import Scene from './classes/Scene'
-import EventCard from './classes/EventCard'
+import Event from './classes/EventCard'
 import Character from './classes/Character'
 
 Vue.use(Vuex)
@@ -14,17 +13,13 @@ export default new Vuex.Store({
     /* Debug */
     superSpeedMode: function(state: AppState) {
       state.tickSpeed = 1
-      state.progressInterval = 3.0
+      state.progressInterval = 5.0
       console.log("super speed activated!")
-    },
-    singleSeason: function(state: AppState) {
-      state.scenes = [state.scenes[0]]
-      console.log("game is 1 season only")
     },
     triggerEvent: function(state: AppState, eventId: string) {
       for(let event of state.events) {
         if(event.id == eventId){
-          state.announcements.push(event)
+          state.eventPresentationQueue.push(event)
           state.isPaused = true
           return;
         }
@@ -32,32 +27,43 @@ export default new Vuex.Store({
     },
     /* //Debug */
     
-    resetCountdown: function (state: AppState) {
-      state.countdownProgress = 0 
-    },
-    clearAnnouncements: function (state: AppState) {
-      state.announcements.length = 0
-    },
     switchView: function (state: AppState, newView: string) {
       console.log('switch view', newView)
       state.currentView = newView
     },
-    prepareForNextScene: function (state: AppState) {
-      state.currentView = 'season-summary'
+    prepareForNextEvent: function (state: AppState) {
+      console.log("prepare next event")
+      let nextEvent = state.eventPresentationQueue.shift()
+      if(nextEvent) {
+        state.currentlyDisplayedEvent = nextEvent
+        state.currentDialogueQueue = state.eventDialogue[nextEvent.id] || []
+        console.log("event dialogue queue", state.currentDialogueQueue)
+        state.isPaused = true
+      }
     },
-    nextSeason: function (state: AppState) {
+    prepareForNextScene: function (state: AppState) {
+      console.log("prepare next scene, commercials")
+      let commercial = state.commercials.shift()
+      if(commercial) {
+        state.currentlyDisplayedCommercial = commercial
+        state.isPaused = true
+      }
+    },
+    nextScene: function (state: AppState) {
+      console.log("nextScene")
       state.currentSceneIndex++
       state.progress = 0
-    },
-    tickCountdown: function (state: AppState) {
-      state.countdownProgress -= state.tickSpeed
-      if(state.countdownProgress <= 0) {
-        state.countdownProgress = 0
+      state.charactersInScene = []
+      state.eventPresentationQueue = state.events.filter((x) => { return x.scene == state.currentSceneIndex })
+      console.log(`events in scene ${state.currentSceneIndex} > ${state.eventPresentationQueue.length}`)
+      if (state.eventPresentationQueue.length == 0) {
+        state.currentView = 'end';
       }
     },
     tick: function (state: AppState) {
       state.progress += state.progressInterval
-      if(state.progress <= 10) {
+      console.log("tick", state.progress)
+      if(state.progress <= state.maxProgressBeforeNextEvent) {
         return
       }
       state.progress = state.progressInterval
@@ -67,11 +73,56 @@ export default new Vuex.Store({
       state.isPaused = false
     },
 
-    acceptFirstEvent: function (state: AppState) {
-      const event = state.announcements.shift()
-      if(!event) { return }
-      event.onAccept(state)
-      state.scenes[state.currentSceneIndex].eventsAccepted.push(event)
+    acceptEvent: function (state: AppState) {
+      if (state.currentlyDisplayedCommercial != null) {
+        state.currentlyDisplayedCommercial = null
+        console.log('commercial end', state)
+        return;
+      }
+
+      if (state.currentlyDisplayedEvent != null) {
+        let event = state.currentlyDisplayedEvent
+        if (event.enters) {
+          let characters: any = state.characters
+          let character: Character = characters[event.character]
+          state.charactersInScene.unshift(character)
+        } else if (event.leaves) {
+          state.charactersInScene = state.charactersInScene.filter((x) => { return x.id != event.character })
+        }
+        if (event.moveToWindow) {
+          console.log("move", event.character, "to window")
+          let characters: any = state.characters
+          let character: Character = characters[event.character]
+          character.isAtWindow = true
+        } else if (event.moveFromWindow) {
+          let characters: any = state.characters
+          let character: Character = characters[event.character]
+          character.isAtWindow = false
+        }
+
+        state.currentlyDisplayedEvent = null
+      }
+
+      if (state.currentDialogueQueue.length > 0) {
+        while (true) {
+          let nextDialogue = state.currentDialogueQueue.shift() || null
+          state.currentlyDisplayedDialogue = nextDialogue
+          if (nextDialogue) {
+            if (nextDialogue.expression) {
+              let characters: any = state.characters
+              let character: Character = characters[nextDialogue.character]
+              character.expression = nextDialogue.expression
+            }
+            if (nextDialogue.says) {
+              break
+            }
+          } else {
+            break
+          }
+        }
+      } else {
+        state.currentlyDisplayedDialogue = null
+      }
     },
 
     processEndGame: function (state: AppState) {
@@ -81,23 +132,6 @@ export default new Vuex.Store({
   },
       
   actions: {
-    startCountdown: function (context) {
-      context.commit('resetCountdown')
-      context.dispatch('tickCountdown')
-    },
-
-    tickCountdown: function (context) {
-      context.commit('tickCountdown')
-      if(context.state.countdownProgress <= 0) {
-        context.dispatch('startSimulation')
-      }
-      else {
-        setTimeout(() => {
-          context.dispatch('tickCountdown')
-        }, context.state.tickSpeed)
-      }
-    },
-
     startSimulation: function (context) {
       console.log("start simulation")
       context.dispatch('tick')
@@ -105,44 +139,64 @@ export default new Vuex.Store({
 
     tick: function (context) {
       context.commit('tick')
-      // if(context.state.currentWeekIndex >= context.state.weeks.length) {
-      //     context.commit('prepareForNextSeason')
-      // } else if(!context.state.isPaused) {
-      //   setTimeout(() => {
-      //     context.dispatch('tick')
-      //   }, context.state.tickSpeed)
-      // }
+      if(context.state.progress == context.state.maxProgressBeforeNextEvent) {
+        if (context.state.eventPresentationQueue.length == 0) {
+          context.commit('prepareForNextScene')
+          if(context.state.currentlyDisplayedCommercial == null) {
+            context.commit('nextScene')
+          }
+        } else {
+          context.commit('prepareForNextEvent')
+        }
+      } else if(!context.state.isPaused) {
+        setTimeout(() => {
+          context.dispatch('tick')
+        }, context.state.tickSpeed)
+      }
     },
 
     acceptEvent: function (context) {
-      context.commit('acceptFirstEvent')
-      context.dispatch('resumeSimulation')
+      if (!context.state.isPaused) {
+        console.log("not paused, early exiting accept event")
+        return;
+      }
+
+      if (context.state.currentlyDisplayedCommercial != null) {
+        context.dispatch('nextScene')
+      }
+
+      console.log("accepting event")
+      context.commit('acceptEvent')
+      if (
+        context.state.currentDialogueQueue.length == 0 
+        && context.state.currentlyDisplayedDialogue == null
+        && context.state.currentlyDisplayedCommercial == null
+        ) {
+        context.dispatch('resumeSimulation')
+      } else {
+        console.log(
+          context.state.currentlyDisplayedDialogue?.character, 
+          ":",
+          context.state.currentlyDisplayedDialogue?.says
+          )
+      }
     },
 
     rejectEvent: function (context) {
       context.commit('rejectFirstEvent')
-      if(context.state.announcements.length == 0) {
+      if(context.state.eventPresentationQueue.length == 0) {
         context.dispatch('resumeSimulation')
       }
     },
 
     resumeSimulation: function (context) {
       console.log('resuming simulation')
-      context.commit('clearAnnouncements')
       context.commit('unpause')
       context.dispatch('tick')
     },
-    nextSeason: function (context) {
-      context.commit('nextSeason')
-      context.dispatch('startCountdown')
-    },
-    nextSeasonOrEnd: function (context) {
-      if(context.state.currentSceneIndex >= context.state.scenes.length - 1) {
-        context.commit('processEndGame')
-      }
-      else {
-        context.commit('switchView', 'drink-building')
-      }
+    nextScene: function (context) {
+      context.commit('nextScene')
+      context.dispatch('tick')
     }
   }
 })

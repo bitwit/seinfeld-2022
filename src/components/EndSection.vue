@@ -3,12 +3,10 @@
     <div class="intro-text-area">
       <img class="logo" src="../../public/img/logo.png" />
       <h1>Seinfeld 2022</h1>
-      <p class="intro-description">
-        The gang is back to tackle modernity.
-      </p>
+      <p class="intro-description">Episode end.</p>
     </div>
-    <button @click="newGame()" class="game-start">
-      <span class="title">Start</span>
+    <button @click="restart()" class="game-start">
+      <span class="title">Restart</span>
     </button>
   </div>
 </template>
@@ -16,17 +14,16 @@
 <script lang="ts">
 import Vue from 'vue'
 import Vuex from 'vuex'
-export default Vue.component('intro-section', {
+export default Vue.component('end-section', {
   methods: {
-    newGame: function () {
-      this.$store.commit('switchView', 'main')
-      this.$store.dispatch('nextScene')
+    restart: function () {
+      window.location.reload()
     }
   }
 })
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $browser-context: 16; // Default
 @function em($pixels, $context: $browser-context) {
   @return #{$pixels/$context}em;

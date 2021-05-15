@@ -1,20 +1,25 @@
 <template>
   <div id="app">
 
+    <div v-if="currentlyDisplayedEvent != null" class="announcements">
+      <announcement :event="currentlyDisplayedEvent" @accept-event="acceptEvent()" />
+    </div>
+    <div v-if="currentlyDisplayedDialogue != null" class="dialogues">
+      <dialogue :dialogue="currentlyDisplayedDialogue" @accept-event="acceptEvent()" />
+    </div>
+    <div v-if="currentlyDisplayedCommercial != null" class="commercials">
+      <commercial :commercial="currentlyDisplayedCommercial" @accept-event="acceptEvent()" />
+    </div>
+
     <div class="main-view view-container">
-      <div class="column center-column">
-        <bar-space />
-      </div>
+        <apartment />
     </div><!-- main view -->
 
-    <div v-if="currentView != 'main'" class="modal-sections">
+    <div v-if="currentView == 'intro' || currentView == 'end'" class="modal-sections">
       <div class="modal-container">
         <intro-section v-if="currentView == 'intro'" />
         <end-section v-if="currentView == 'end'" />
       </div>
-    </div>
-    <div v-if="announcements.length > 0" class="announcements">
-      <ls-announcement v-for="event in announcements" :key="event.name" :event="event" @accept-event="acceptEvent()" @reject-event="rejectEvent()"/>
     </div>
 
   </div>
@@ -28,21 +33,25 @@ import AppStore from './AppStore'
 import { debug } from './utilities'
 
 import IntroSection from './components/IntroSection.vue'
+import EndSection from './components/EndSection.vue'
 
 import AnnouncementView from './components/Announcement.vue'
-import BartenderView from './components/Bartender.vue'
-import BartenderCharacterView from './components/BartenderCharacter.vue'
-import BarSpaceView from './components/BarSpace.vue'
+import CharacterView from './components/Character.vue'
+import Apartment from './components/Apartment.vue'
+import Dialogue from './components/Dialogue.vue'
+import Commercial from './components/Commercial.vue'
 
 export default Vue.extend({
   name: 'App',
   components: {
     IntroSection,
+    EndSection,
 
     AnnouncementView, 
-    BartenderView,
-    BartenderCharacterView,
-    BarSpaceView
+    CharacterView,
+    Apartment,
+    Dialogue,
+    Commercial
   },
  created: function () {
     document.addEventListener('keydown', (e) => {
@@ -53,30 +62,15 @@ export default Vue.extend({
     debug.superSpeed = () => {
       this.$store.commit('superSpeedMode')
     }
-    debug.singleSeason = () => {
-      this.$store.commit('singleSeason')
-    }
-    debug.showMeTheMoney = (amount: number) => {
-      this.$store.commit('addCash', amount)
-    }
-    debug.addIngredient = (ingredient: string) => {
-      this.$store.commit('addIngredient', ingredient)
-    }
     debug.triggerEvent = (name: string) => {
       this.$store.commit('triggerEvent', name)
     }
   },
   computed: Vuex.mapState({
-    announcements: function (state: AppState) { return state.announcements },
-    currentView: function (state: AppState) { return state.currentView },
-    season: function (state: AppState) { 
-      if(state.currentSceneIndex == -1) {
-        return state.scenes[0]
-      }
-      return state.scenes[state.currentSceneIndex] 
-    },
-    countdownProgress: function (state: AppState) { return state.countdownProgress },
-    progress: function (state: AppState) { return state.progress },
+    currentlyDisplayedEvent: function (state: AppState) { return state.currentlyDisplayedEvent },
+    currentlyDisplayedDialogue: function (state: AppState) { return state.currentlyDisplayedDialogue },
+    currentlyDisplayedCommercial: function (state: AppState) { return state.currentlyDisplayedCommercial },
+    currentView: function (state: AppState) { return state.currentView }
   }),
   methods: {
     switchView: function (viewName: string) {
@@ -130,28 +124,10 @@ body { height: 100% }
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  height: 100%;
-}
-.main-view {
-  display: flex;
-  height: 100%;
-}
-.column {
+  width: em(1000);
+  height: em(562.5);
+  margin: 0 auto;
   position: relative;
-  height: 100%;
-}
-.left-column {
-  z-index: 8888;
-  width: 15%;
-  background-color: rgba($color: #888, $alpha: 0.3)
-}
-.center-column {
-  width: 70%;
-}
-.right-column { 
-  z-index: 8888;
-  width: 15%;
-  background-color: rgba($color: #888, $alpha: 0.3)
 }
 
 .main-title {
@@ -160,20 +136,6 @@ body { height: 100% }
   margin: em(10);
   padding: em(10);
   font-size: em(20);
-}
-
-.drink-special {
-  font-family: 'ComicPapyrus';
-  box-sizing: border-box;
-  color: white;
-  background: #333;
-  min-height: em(100);
-  font-size: em(16);
-  margin: em(20);
-  padding: em(10);
-  h4 {
-    margin: 0
-  }
 }
 
 /* line 541, style.sass */
@@ -201,12 +163,6 @@ div.modal-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-@media only screen and (max-width: 1024px) {
-  .column {
-    font-size: em(10);
-  }
 }
 
 </style>

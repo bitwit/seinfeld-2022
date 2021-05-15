@@ -1,7 +1,7 @@
 enum Mood {
   Happy = "happy",
   Neutral = "neutral",
-  Sad = "sad",
+  Sarcastic = "sarcastic",
   Angry = "angry"
 }
 export default Mood

@@ -1,6 +1,8 @@
 <template>
-    <div :class="typeClass" class="announcement">
-    <p class="description">{{event.text}}</p>
+    <div :class="typeClass" class="commercial">
+    <h1>Commercial</h1>
+    <img class="logo" src="../../public/img/logo.png" />
+    <p class="description">{{commercial.text}}</p>
 
     <button :class="typeClass" @click="acceptEvent()" class="accept">
       <span class="title">Next</span>
@@ -13,23 +15,20 @@
 <script lang="ts">
 import Vue from 'vue'
 
-export default Vue.component('announcement', {
+export default Vue.component('commercial', {
   props: {
-    event: Object
+    commercial: Object
   },
   computed: {
     typeClass: function () {
       const obj: any = {}
-      obj[`type-${this.event.id}`] = true
+      obj[`type-${this.commercial.id}`] = true
       return obj
     }
   },
   methods: {
     acceptEvent: function () {
       this.$emit('accept-event')
-    },
-    rejectEvent: function () {
-      this.$emit('reject-event')
     }
   }
 })
@@ -41,21 +40,21 @@ $browser-context: 16; // Default
 }
 
 /* line 541, style.sass */
-div.announcements {
+div.commercials {
   position: absolute;
   z-index: 9999;
   width: 90%;
-  height: 50%;
-  top: 25%;
+  height: 80%;
+  top: 10%;
   left: 5%; 
 }
 
-div.announcements.displaying-false {
+div.commercials.displaying-false {
   display: none;
   pointer-events: none; 
 }
 
-div.announcement {
+div.commercial {
   box-sizing: border-box;
   border-width: 0.625em;
   border-style: solid;
@@ -64,6 +63,10 @@ div.announcement {
   height: 100%;
   background-color: #FFF;
   text-align: left; 
+
+  h1 {
+    text-align: center;
+  }
 
   p.description {
     font-size: 1.75em;
@@ -74,7 +77,7 @@ div.announcement {
   }
 }
 
-div.announcement button.accept, div.announcement button.reject {
+div.commercial button.accept, div.commercial button.reject {
   display: block;
   outline: none;
   cursor: pointer;
@@ -111,7 +114,7 @@ div.announcement button.accept, div.announcement button.reject {
   background: linear-gradient(to right, #ffffff 0%, #e2e2e2 25%); }
 
 @media only screen and (max-width: 1024px) {
-  .announcement {
+  .commercial {
     font-size: em(9)
   }
 }

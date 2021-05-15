@@ -1,13 +1,17 @@
 export default class Character {
   id: string = ""
-  name: string = ""
-  title: string = ""
-  expression: string = "male" // facial expressions
+  expression: string = "neutral"
+  headTopOffset: number = 0
+  headLeftOffset: number = 0
+  isAtWindow: boolean = false
 
-  constructor(data: any) {
-    this.id = data.id
-    this.name = data.name
-    this.title = data.title
-    this.expression = data.expression
+  constructor(
+    id: string, 
+    headTopOffset: number = 0, 
+    headLeftOffset: number = 0
+    ) {
+    this.id = id
+    this.headTopOffset = headTopOffset
+    this.headLeftOffset = headLeftOffset
   }
 }
