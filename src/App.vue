@@ -39,6 +39,40 @@ import Apartment from './components/Apartment.vue'
 import Dialogue from './components/Dialogue.vue'
 import Commercial from './components/Commercial.vue'
 
+let preloadedImages = [
+"apartment-bg.png",
+"apartment-couch.png",
+"body-arms-down.png",
+"body-arms-left.png",
+"body-arms-right.png",
+"body-arms-up.png",
+"buzzer.png",
+"default-body.png",
+"elaine-angry.png",
+"elaine-neutral.png",
+"elaine-sarcastic.png",
+"george-angry.png",
+"george-happy.png",
+"george-neutral.png",
+"georgetiki.png",
+"iphone.png",
+"jerry-neutral.png",
+"jerry-sarcastic.png",
+"jerry-shame.png",
+"jerry-shocked.png",
+"jerry-skeptical.png",
+"kramer-angry.png",
+"kramer-happy.png",
+"kramer-neutral.png",
+"logo.png",
+"newman-neutral.png",
+"reporter-neutral.png",
+"tv-and-reporter.png",
+"tv.png",
+"window-closed.png",
+"window-open.png"
+];
+
 export default Vue.extend({
   name: 'App',
   components: {
@@ -63,6 +97,7 @@ export default Vue.extend({
     debug.triggerEvent = (name: string) => {
       this.$store.commit('triggerEvent', name)
     }
+    this.preloadImages()
   },
   computed: Vuex.mapState({
     currentlyDisplayedEvent: function (state: AppState) { return state.currentlyDisplayedEvent },
@@ -71,6 +106,12 @@ export default Vue.extend({
     currentView: function (state: AppState) { return state.currentView }
   }),
   methods: {
+    preloadImages: function () {
+      for(let imageName of preloadedImages) {
+        let image = new Image();
+        image.src = `/img/${imageName}`
+      }
+    },
     switchView: function (viewName: string) {
       this.$store.commit('switchView', viewName)
     },
