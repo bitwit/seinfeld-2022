@@ -76,7 +76,6 @@ $browser-context: 16; // Default
   }
 }
 
-
 @media only screen and (max-width: 1024px) {
   .character {
     font-size: em(8);

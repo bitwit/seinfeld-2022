@@ -1,80 +1,87 @@
-eventId,character,says,expression
-george-intro,jerry,yeah?,neutral
-george-intro,george,it's george,neutral
-george-intro,jerry,come on up,neutral
-george-intro1,george,"Jerry, i’m doing it, i’m making new friends",happy
-george-intro1,jerry,and yet here you are... in my apartment,sarcastic
-george-intro1,george,"you know, it’s not easy coming out of a pandemic and just meeting new people. not all of us are in show business meeting new people everyday",neutral
-george-intro1,jerry,so who’s the lucky guy,neutral
-george-intro1,george,"so i’m just walking down Houston street and this guy flashes me a friendly wave and just sparks up conversation. At first i thought he might be a little nuts, but he wanted to share some information about a group he’s in. We’re bald and we’re sick of how the media portrays us!",happy
-george-intro1,jerry," Yah George, “The Rock” has it really hard these days",sarcastic
-george-intro1,george,"yeah yeah, very funny. There’s a whole group that gets together every week. I’m joining a community Jerry, i have a purpose, a sense of pride.",happy
-elaine-intro,jerry,That's probably Elaine,neutral
-elaine-intro,elaine,It's me,neutral
-elaine-intro,george,It's her,neutral
-elaine-intro2,elaine,"I’m over it. There’s not a decent guy left in new york, every bozo in this city settled during the pandemic",neutral
-elaine-intro2,jerry,George made a new friend,neutral
-elaine-intro2,elaine,"Good for you, George...but what about me!",neutral
-elaine-intro2,jerry,Why don’t you use one of these dating apps?,neutral
-elaine-intro2,elaine,You think i haven’t? All that’s left is trump supporters and anti-vaxxers. It’s just Parler with unsolicited dick pics,angry
-elaine-intro2,george,I think Karl is single,neutral
-elaine-intro2,elaine,who’s Karl,sarcastic
-kramer-intro,kramer,"Hey, Jerry. Do have a big bag or satchel. Something that can hold a lot of stuff, you know?",neutral
-kramer-intro,george,Hi Kramer,happy
-kramer-intro,kramer,"yah, so about the bag.",neutral
-kramer-intro,jerry,"What do you need it for, i’ve probably got something lying around",neutral
-kramer-intro,kramer,"Well you know, Newman’s been overloaded on his with his mail deliveries with everyone ordering online, right. So I’m helping him on his route",happy
-kramer-intro,elaine,"Don’t they pay people for that, why do you need to help him?",neutral
-kramer-intro,kramer,"Well this city is being overrun with delivery drivers and amazon truck, they’ve lost their respect for the noble postal profession. I’m helping Newman because i believe in our postal workers. Someone has to take a stand…. It’s not like George is going to do anything about it.",angry
-kramer-intro,george,"Hey, i don’t deserve any of this. I’ve got new friends",angry
-kramer-intro1,kramer,whats up with George?,neutral
-kramer-intro1,elaine,who knows...,sarcastic
-,,,
-elaine-mid,jerry,"I thought you and Puddy got back during the lockdowns, whatever happened to that",neutral
-elaine-mid,elaine,"what happened? Puddy happened, what do you think? All he could do was brag about being an essential worker because “cars are essential” and it’s his important role in society to ensure they keep running.",angry
-elaine-mid,jerry,Mechanics are the backbone of any good society,sarcastic
-elaine-mid,elaine,He actually got mad everytime people banged pots and cheering for all the hospital staff because he felt he wasn’t getting enough recognition,angry
-elaine-mid,jerry,well how do you think they got to the hospital? The man is a national hero,sarcastic
-elaine-mid,elaine,you're not helping,angry
-george-mid,jerry,"How’d you get in here, I didn’t even buzz you up?",neutral
-george-mid,george,"I have friends, Jerry. Friends everywhere now and they were nice enough to let me in. I gotta tell you, this is more of a movement than even I thought. We’re proud, we’re bald, and we’re not taking it anymore! I’m oozing confidence Jerry, it’s seeping out of me. I’ve got a community",happy
-george-mid,jerry,You might want to get that seeping thing looked at,sarcastic
-george-mid,elaine,you know Manson had a community,neutral
-george-mid,george,"Say what you want Elaine, these are good people. We’re proud balds!",neutral
-george-mid,elaine,"See what i mean jerry, it’s all nut jobs out there i don’t even know why i bother trying",angry
-george-mid,george,"you should meet some of my new friends Elaine, you might find you like one of them. We lift each other up.",neutral
-george-mid,elaine,"You’re right, there’s nothing more arousing than a group of men banding together over their perceived inadequacies. My ovaries ache just thinking about it",sarcastic
-kramer-mid,jerry,do you hear that?,neutral
-kramer-mid,george,Elaine’s ovaries?,neutral
-kramer-mid,jerry,"No, the window",neutral
-kramer-mid,elaine,It sounds like Kramer yelling,neutral
-kramer-mid2,kramer,You think you can just throw on your hazards and park anywhere you feel like? Is that it? You don’t own this town. You’re holding up the United states postal service!,angry
-kramer-mid3,jerry,that’s enough of that,neutral
-,,,
-kramer-end,kramer,"...so Newman’s got this guy pinned up against the passenger seat, right, and two more Amazon trucks show up out of nowhere. Well now I know it’s us or them.",happy
-kramer-end,jerry,"Kramer, that's insane, where were the cops",shocked
-kramer-end,kramer,"Oh, they know not to get involved when it comes to the USPS. So there I am WHIPPING parcel after parcel out of the truck trying to slow down the other trucks...",angry
-kramer-end,jerry,NEWMAN WAS STILL DRIVING?,shocked
-kramer-end,kramer,"The mail waits for no one Jerry, NO ONE",angry
-kramer-end,jerry,But doesn’t amazon use USPS for some of their deliveries,sarcastic
-kramer-end,kramer,"Jerry, you said it yourself. They USE the USPS and fat-cat Bezos is laughing all the way to the bank",angry
-kramer-end,jerry,"You might want to lay low for a bit, none of what you’ve done sounds okay",neutral
-kramer-end,kramer,"Jerry, if they want to jail me for standing up for the establishment - so be it, but im not hiding",neutral
-kramer-end,jerry,So what happened to Newman?,neutral
-kramer-end,kramer,"Oh, he’s in jail. That reminds me, can i borrow a couple thousand bucks?",happy
-george-end,george,It’s George,neutral
-george-end,jerry,"I know it's you George, i’ve had call display for over a decade",sarcastic
-george-end,george,"You know, you could be a little nicer to me",neutral
-george-end,jerry,whats up George,neutral
-george-end,george,Why are belts still a thing? We're in the twenty-first century and we rely on what is essentially an expensive piece of rope to keep our pants up,neutral
-george-end,jerry,Is this really what you’re calling me for?,sarcastic
-george-end,george,"I’m bored and walking outside, would you at least humor me. Hey, i see something going on in central park. Throw on the TV",neutral
-george-end,jerry,"alright, just give me a second here",neutral
-george-end2,reporter,"""...as they continue to rally and dispute the alleged corrupt election over two years ago""",neutral
-george-end2,george,"PB, I see PB on their jackets. It’s the Proud Balds, im getting in on this. One second jerry.",neutral
-george-end2,jerry,"George, that’s a far-right protest",shocked
-george-end2,george,"It’s hard to hear you over the crowd Jerry. I see a camera. Can you see me Jerry? This is amazing, look at all these people.",neutral
-george-end2,jerry,"George, get out of there",shocked
-george-end2,george,"Jerry i’m waving at the camera with a stick i grabbed off some guy, can you see me?",neutral
-george-end3,george,JERRY!,neutral
-george-end3,jerry,Well... George is cancelled...,sarcastic
+eventId,character,says,expression,bodyExpression
+george-intro,jerry,yeah?,neutral,
+george-intro,george,it's george,neutral,
+george-intro,jerry,come on up,neutral,
+george-intro1,george,"Jerry, i’m doing it, i’m making new friends",happy,
+george-intro1,jerry,...and yet here you are... in my apartment,sarcastic,
+george-intro1,george,"You know, it’s not easy coming out of a pandemic and meeting new people. ",neutral,
+george-intro1,jerry,so who’s the lucky guy,neutral,
+george,george,so i’m just walking down Houston street and this guy flashes me a friendly wave and just sparks up conversation. ,happy,
+george-intro1,george,"At first i thought he might be a little nuts, but he wanted to share some information about a group he’s in. We’re bald and we’re sick of how the media portrays us!",happy,
+george-intro1,jerry," Yah George, “The Rock” has it really hard these days",sarcastic,
+george-intro1,george,"yeah yeah, very funny. There’s a whole group that gets together every week. I’m joining a community Jerry, i have a purpose, a sense of pride.",happy,
+elaine-intro,jerry,That's probably Elaine,neutral,
+elaine-intro,elaine,It's me,neutral,
+elaine-intro,george,It's her,neutral,
+elaine-intro2,elaine,"I’m over it. There’s not a decent guy left in new york, every bozo in this city settled during the pandemic",neutral,
+elaine-intro2,jerry,George made a new friend,neutral,
+elaine-intro2,elaine,"Good for you, George...but what about me!",neutral,
+elaine-intro2,jerry,Why don’t you use one of these dating apps?,neutral,
+elaine-intro2,elaine,You think i haven’t? All that’s left is trump supporters and anti-vaxxers. It’s just Parler with unsolicited dick pics,angry,
+elaine-intro2,george,My friend Karl is single,neutral,
+elaine-intro2,elaine,who’s Karl,sarcastic,
+kramer-intro,kramer,"Hey, Jerry. Do have a big bag or satchel. Something that can hold a lot of stuff, you know?",neutral,
+kramer-intro,george,Hi Kramer,happy,
+kramer-intro,kramer,"yah, so about the bag.",neutral,
+kramer-intro,jerry,"What do you need it for, i’ve probably got something lying around",neutral,
+kramer-intro,kramer,"Well you know, Newman’s been overloaded on his with his mail deliveries with everyone ordering online, right. So I’m helping him on his route",happy,
+kramer-intro,elaine,"Don’t they pay people for that, why do you need to help him?",neutral,
+kramer-intro,kramer,"Well this city is being overrun with delivery drivers and amazon truck, they’ve lost their respect for the noble postal profession. ",angry,
+kramer-intro,kramer,I’m helping Newman because i believe in our postal workers. Someone has to take a stand…. It’s not like George is going to do anything about it.,,
+kramer-intro,george,"Hey, i don’t deserve any of this. I’ve got new friends",angry,
+kramer-intro1,kramer,whats up with George?,neutral,
+kramer-intro1,elaine,who knows...,sarcastic,
+newman-intro ,jerry,Hello....Newman...,angry,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+elaine-mid,jerry,"I thought you and Puddy got back during the lockdowns, whatever happened to that",neutral,
+elaine-mid,elaine,"what happened? Puddy happened, what do you think? All he could do was brag about being an essential worker because “cars are essential” and it’s his important role in society to ensure they keep running.",angry,
+elaine-mid,jerry,Mechanics are the backbone of any good society,sarcastic,
+elaine-mid,elaine,He actually got mad everytime people banged pots and cheering for all the hospital staff because he felt he wasn’t getting enough recognition,angry,
+elaine-mid,jerry,well how do you think they got to the hospital? The man is a national hero,sarcastic,
+elaine-mid,elaine,you're not helping,angry,
+george-mid,jerry,"How’d you get in here, I didn’t even buzz you up?",neutral,
+george-mid,george,"I have friends, Jerry. Friends everywhere now and they were nice enough to let me in. I gotta tell you, this is more of a movement than even I thought. We’re proud, we’re bald, and we’re not taking it anymore! I’m oozing confidence Jerry, it’s seeping out of me. I’ve got a community",happy,
+george-mid,jerry,You might want to get that seeping thing looked at,sarcastic,
+george-mid,elaine,you know Manson had a community,neutral,
+george-mid,george,"Say what you want Elaine, these are good people. We’re proud balds!",neutral,
+george-mid,elaine,"See what i mean jerry, it’s all nut jobs out there i don’t even know why i bother trying",angry,
+george-mid,george,"you should meet some of my new friends Elaine, you might find you like one of them. We lift each other up.",neutral,
+george-mid,elaine,"You’re right, there’s nothing more arousing than a group of men banding together over their perceived inadequacies. My ovaries ache just thinking about it",sarcastic,
+kramer-mid,jerry,do you hear that?,neutral,
+kramer-mid,george,Elaine’s ovaries?,neutral,
+kramer-mid,jerry,"No, the window",neutral,
+kramer-mid,elaine,It sounds like Kramer yelling,neutral,
+kramer-mid2,kramer,You think you can just throw on your hazards and park anywhere you feel like? Is that it? You don’t own this town. You’re holding up the United states postal service!,angry,
+kramer-mid3,jerry,that’s enough of that,neutral,
+,,,,
+kramer-end,kramer,"...so Newman’s got this guy pinned up against the passenger seat, right, and two more Amazon trucks show up out of nowhere. Well now I know it’s us or them.",happy,
+kramer-end,jerry,"Kramer, that's insane, where were the cops",shocked,
+kramer-end,kramer,"Oh, they know not to get involved when it comes to the USPS. So there I am WHIPPING parcel after parcel out of the truck trying to slow down the other trucks...",angry,
+kramer-end,jerry,NEWMAN WAS STILL DRIVING?,shocked,
+kramer-end,kramer,"The mail waits for no one Jerry, NO ONE",angry,
+kramer-end,jerry,But doesn’t amazon use USPS for some of their deliveries,sarcastic,
+kramer-end,kramer,"Jerry, you said it yourself. They USE the USPS and fat-cat Bezos is laughing all the way to the bank",angry,
+kramer-end,jerry,"You might want to lay low for a bit, none of what you’ve done sounds okay",neutral,
+kramer-end,kramer,"Jerry, if they want to jail me for standing up for the establishment - so be it, but im not hiding",neutral,
+kramer-end,jerry,So what happened to Newman?,neutral,
+kramer-end,kramer,"Oh, he’s in jail. That reminds me, can i borrow a couple thousand bucks?",happy,
+george-end,george,It’s George,neutral,
+george-end,jerry,"I know it's you George, i’ve had call display for over a decade",sarcastic,
+george-end,george,"You know, you could be a little nicer to me",neutral,
+george-end,jerry,whats up George,neutral,
+george-end,george,Why are belts still a thing? We're in the twenty-first century and we rely on what is essentially an expensive piece of rope to keep our pants up,neutral,
+george-end,jerry,Is this really what you’re calling me for?,sarcastic,
+george-end,george,"I’m bored and walking outside, would you at least humor me. Hey, i see something going on in central park. Throw on the TV",neutral,
+george-end,jerry,"alright, just give me a second here",neutral,
+george-end2,reporter,"""...as they continue to rally and dispute the alleged corrupt election over two years ago""",neutral,
+george-end2,george,"PB, I see PB on their jackets. It’s the Proud Balds, im getting in on this. One second jerry.",neutral,
+george-end2,jerry,"George, that’s a far-right protest",shocked,
+george-end2,george,"It’s hard to hear you over the crowd Jerry. I see a camera. Can you see me Jerry? This is amazing, look at all these people.",neutral,
+george-end2,jerry,"George, get out of there",shocked,
+george-end2,george,"Jerry i’m waving at the camera with a stick i grabbed off some guy, can you see me?",neutral,
+george-end3,george,JERRY!,neutral,
+george-end3,jerry,Well... George is cancelled...,sarcastic,

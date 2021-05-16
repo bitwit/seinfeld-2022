@@ -1,5 +1,10 @@
 <template>
     <div :class="typeClass" class="announcement">
+    <img 
+      v-if="event.image != null"
+      class="event-image" 
+      :src="'./img/' + event.image + '.png'"
+      />
     <p class="description">{{event.text}}</p>
 
     <button :class="typeClass" @click="acceptEvent()" class="accept">
@@ -64,6 +69,12 @@ div.announcement {
   height: 100%;
   background-color: #FFF;
   text-align: left; 
+
+  img.event-image {
+    display: block;
+    max-width: em(80);
+    margin: 0 auto;
+  }
 
   p.description {
     font-size: 1.75em;

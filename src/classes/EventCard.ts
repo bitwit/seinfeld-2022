@@ -19,7 +19,7 @@ export default class Event {
     this.text = data.text
     this.scene = parseInt(data.scene || 0)
     this.expression = data.expression
-    this.image = data.image
+    this.image = data.image == "" ? null : data.image
     this.enters = (data.enters == "1")
     this.leaves = (data.leaves == "1")
     this.moveToWindow = (data.moveToWindow == "1")
