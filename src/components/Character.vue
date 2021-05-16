@@ -4,7 +4,10 @@
       class="character-head" 
       :src="'./img/' + character.id + '-' + character.expression + '.png'"
       :style="headStyles" />
-    <div class="character-body"></div>
+    <img 
+      class="character-body" 
+      :src="'./img/body-' + character.bodyExpression + '.png'"
+      />
   </div>
 </template>
 
@@ -19,7 +22,7 @@ export default Vue.component('character', {
   computed: Vuex.mapState({
     characterStyles: function () {
       return {
-        top: this.em(130 + this.additionalTopOffset),
+        top: this.em(200 + this.additionalTopOffset),
         right: this.em(100 + (this.calculatedIndex * 220)),
         zIndex: `${this.character.isAtTelevision ? 100 : 1}`
       }
@@ -63,16 +66,21 @@ $browser-context: 16; // Default
    transition-property: top left z-index;
    transition-duration: 1.5s;
    transition-timing-function: linear;
+   width: em(180);
+   height: em(240);
 
   .character-head {
-    position: relative;
+    position: absolute;
     z-index: 10;
     width: em(80);
   }
   .character-body {
-    background: url('../../public/img/default-body.png');
-    width: em(180);
-    height: em(240);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background: url('../../public/img/body-arms-down.png');
     background-size: cover;
     margin: 0 auto;
   }

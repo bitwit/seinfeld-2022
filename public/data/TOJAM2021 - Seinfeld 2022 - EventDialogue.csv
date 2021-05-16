@@ -7,58 +7,61 @@ george-intro1,jerry,...and yet here you are... in my apartment,sarcastic,arms-le
 george-intro1,george,"You know, it’s not easy coming out of a pandemic and meeting new people. ",neutral,arms-down
 george-intro1,jerry,who’s the lucky guy?,neutral,arms-down
 george-intro1,george,so i’m just walking down Houston street and this guy flashes me a friendly wave and just sparks up conversation. ,happy,arms-right
-george-intro1,jerry,completely normal thing for a stranger to do.,sarcastic,arms-down
+george-intro1,jerry,...completely normal thing for a stranger to do.,sarcastic,arms-down
 george-intro1,george,He just wanted to share some information. He chairs a group for guys like us.,happy,arms-up
 george-intro1,george,WE'RE BALD AND SICK OF HOW THE MEDIA PORTRAYS US!,angry,arms-right
 george-intro1,jerry,"Yah George, “The Rock” has it really hard these days",sarcastic,arms-down
-george-intro1,george,"That's different! They get together every week. I’m joining a community Jerry, I have a purpose...",happy,arms-down
+george-intro1,george,"That's different! They get together every week. I’m joining a community Jerry, they're called the Proud Balds!",happy,arms-down
 elaine-intro,jerry,That's probably Elaine,neutral,arms-down
 elaine-intro,elaine,It's me,neutral,arms-down
 elaine-intro,george,It's her,neutral,arms-down
-elaine-intro2,elaine,"I’m over it. There’s not a decent guy left in new york, every bozo in this city settled during the pandemic",neutral,arms-up
+elaine-intro2,elaine,I’m over it! ,neutral,arms-up
+elaine-intro2,george,...over what?,neutral,arms-down
+elaine-intro2,elaine,"There’s not a decent guy left in new york, every bozo in this city settled during the pandemic",angry,arms-down
+elaine-intro2,george,..oh..,neutral,arms-down
 elaine-intro2,jerry,George made a new friend,neutral,arms-down
 elaine-intro2,elaine,"Good for you, George...but what about me!",neutral,arms-down
-elaine-intro2,jerry,Why don’t you try the guys on these dating apps?,neutral,arms-left
+elaine-intro2,jerry,Why don’t you try the guys on one of these dating apps?,neutral,arms-left
 elaine-intro2,elaine,You think I haven’t? They're all trump supporters and anti-vaxxers. It's just Parler with unsolicited dick pics,angry,arms-up
 elaine-intro2,george,My friend Karl is single,neutral,arms-down
 elaine-intro2,elaine,who’s Karl?,sarcastic,arms-down
 kramer-intro,kramer,"Hey, Jerry. Do have a big bag or satchel. Something that can hold a lot of stuff, you know?",neutral,arms-right
-kramer-intro,george,Hi Kramer,happy,arms-down
-kramer-intro,kramer,"yah, so about the bag?",neutral,arms-down
-kramer-intro,jerry,"What do you need it for, i’ve probably got something lying around",neutral,arms-right
-kramer-intro,kramer,"Well, you know, Newman’s been overloaded with his mail deliveries.  Everyone ordering online and all. So I’m helping him out",happy,arms-down
+kramer-intro,george,"Hi, Kramer!",happy,arms-down
+kramer-intro,kramer,yah.. about that bag?,neutral,arms-down
+kramer-intro,jerry,What do you need it for?  I probably have something laying around,neutral,arms-right
+kramer-intro,kramer,"Well, you know, Newman’s been overloaded with his mail deliveries.  Everyone ordering online and all. So I’m helping him out!",happy,arms-down
 kramer-intro,elaine,"Don’t they pay people for that, why do you need to help him?",neutral,arms-right
 kramer-intro,kramer,"Well, this city is being overrun with delivery drivers and amazon trucks, they’ve lost their respect for the noble postman.",angry,arms-up
 kramer-intro,kramer,I’m helping Newman because I believe in our brave postal workers.,neutral,arms-left
 kramer-intro,kramer,Someone has to take a stand….,neutral,arms-right
 kramer-intro,kramer,It’s not like George is going to do anything about it!,angry,arms-down
 kramer-intro,george,"Hey, I don’t deserve any of this. I’ve got new friends",angry,arms-up
-kramer-intro1,kramer,whats up with George?,neutral,arms-down
+kramer-intro1,kramer,Whats up with George?,neutral,arms-down
 kramer-intro1,elaine,who knows...,sarcastic,arms-down
 newman-intro ,newman,Hello....Jerry...,angry,arms-down
 newman-intro ,jerry,Hello....Newman...,skeptical,arms-down
-newman-intro ,newman,"Kramer, what's taking you so long",neutral,arms-left
-newman-intro ,kramer,"i'm coming, i'm coming",neutral,arms-down
+newman-intro ,newman,"Kramer, what's taking you so long?",neutral,arms-left
+newman-intro ,kramer,"i'm coming, i'm coming!",neutral,arms-down
 ,,,,
-elaine-mid,jerry,I thought you and Puddy got back during the lockdowns. Whatever happened to that?,neutral,arms-down
-elaine-mid,elaine,"What happened? Puddy happened, what do you think HAPPENED?",angry,arms-up
-elaine-mid,elaine,He would brag about being an essential worker because “cars are essential” as if he was the only person in the world who could repair one!,angry,arms-right
-elaine-mid,elaine,Can you believe the nerve?,neutral,arms-down
-elaine-mid,jerry,Mechanics.. are the backbone of any good society,sarcastic,arms-down
-elaine-mid,elaine,He actually got mad whenever people banged pots for the hospital staff ,angry,arms-up
+elaine-mid,jerry,...I thought you and Puddy got back during the lockdowns. Whatever happened to that?,neutral,arms-down
+elaine-mid,elaine,What happened? Puddy happened! What do you think HAPPENED?,angry,arms-up
+elaine-mid,elaine,He bragged about being an essential worker because “cars are essential” as if he was the ONLY person in the world who does repairs!,angry,arms-right
+elaine-mid,elaine,Can you believe the nerve?,angry,arms-down
+elaine-mid,jerry,Mechanics.. are the backbone of any good society,neutral,arms-down
+elaine-mid,elaine,He actually got mad whenever people banged pots for hospital staff...,angry,arms-up
 elaine-mid,elaine,...he felt he wasn’t getting enough recognition,neutral,arms-left
 elaine-mid,jerry,Well how do you think they got to the hospital? The man is a national hero,sarcastic,arms-down
-elaine-mid,elaine,You're not helping,angry,arms-down
+elaine-mid,elaine,You're not helping..,angry,arms-down
 george-mid,jerry,"How’d you get in here, I didn’t even buzz you up?",neutral,arms-left
 george-mid,george,"I have friends, Jerry. Friends everywhere... and THEY were nice enough to let me in.",happy,arms-down
 george-mid,george,"I gotta tell you, this is more of a movement than I thought. We’re proud, we’re bald, and we’re not taking it anymore! ",happy,arms-down
 george-mid,george,"I’m oozing confidence Jerry, it’s seeping out of me. I have a community!",happy,arms-down
 george-mid,jerry,You might want to get that seeping thing looked at,sarcastic,arms-left
 george-mid,elaine,...you know Manson had a community,neutral,arms-right
-george-mid,george,"Say what you want Elaine, these are good people. We’re proud balds!",neutral,arms-left
+george-mid,george,"Say what you want Elaine, these are good people. We’re Proud Balds!",neutral,arms-left
 george-mid,elaine,"See what I mean Jerry, it’s all nut jobs out there... I don’t even know why I bother anymore",angry,arms-down
 george-mid,george,"You should meet my new friends, Elaine, you might like one of them. We lift each other up!",neutral,arms-left
-george-mid,elaine,...there’s nothing more arousing than a group of men banding together over their perceived inadequacies. My ovaries ache just thinking about it,sarcastic,arms-down
+george-mid,elaine,"Sure, George...nothing's more arousing than men banding together over perceived inadequacies. My ovaries ache just thinking about it",sarcastic,arms-down
 kramer-mid,jerry,do you hear that?,neutral,arms-down
 kramer-mid,george,Elaine’s ovaries?,neutral,arms-down
 kramer-mid,jerry,No... the window...,neutral,arms-down
@@ -68,33 +71,35 @@ kramer-mid2,kramer,"YOU DON'T OWN THIS TOWN, YOU'RE MESSING WITH THE UNITED STAT
 kramer-mid3,jerry,....that’s enough of that,neutral,arms-down
 ,,,,
 kramer-end,kramer,"...so Newman’s got this guy pinned up against the passenger seat, right....then two more Amazon trucks show up!",happy,arms-up
-kramer-end,kramer,"Well, now I know.... it’s us or them.",happy,arms-right
+kramer-end,kramer,"Well, now I know.... it’s either us or them.",happy,arms-right
 kramer-end,jerry,"Kramer, that's insane, where were the cops",shocked,arms-left
 kramer-end,kramer,"Oh, they know not to get involved when it comes to the USPS. ",neutral,arms-down
 kramer-end,kramer,...so there I am WHIPPING parcel after parcel out of the truck trying to slow down the other trucks..,angry,arms-left
 kramer-end,jerry,NEWMAN WAS STILL DRIVING?,shocked,arms-up
 kramer-end,kramer,"The mail waits for no one Jerry, NO ONE",angry,arms-up
-kramer-end,jerry,But doesn’t amazon use USPS for some of their deliveries,sarcastic,arms-down
+kramer-end,jerry,But doesn’t amazon use USPS for some of their deliveries?,sarcastic,arms-down
 kramer-end,kramer,"Jerry, you said it yourself! ...They USE the USPS and fat-cat Bezos laughs all the way to the bank",angry,arms-left
 kramer-end,jerry,"You might want to lay low for a bit, none of this sounds okay",neutral,arms-down
-kramer-end,kramer,Jerry... if they want to jail me for standing up for the establishment...THEN THIS ISN'T AMERICA!,neutral,arms-down
+kramer-end,kramer,Jerry... if they want to jail me for standing up for the establishment...,neutral,arms-down
+kramer-end,kramer,...THEN THIS ISN'T AMERICA!,angry,arms-up
 kramer-end,jerry,So what happened to Newman?,neutral,arms-down
 kramer-end,kramer,"...he’s in jail...oh,  can i borrow a couple thousand bucks?",happy,arms-down
 george-end,george,It’s George,neutral,arms-down
 george-end,jerry,"I know it's you George, you're in my iPhone",sarcastic,arms-down
-george-end,george,"You know, you could be a little nicer",neutral,arms-down
-george-end,jerry,what's up George,neutral,arms-down
-george-end,george,why are belts still a thing? ,angry,arms-down
+george-end,george,"You know, you could be a little nicer...",neutral,arms-down
+george-end,jerry,.....,neutral,arms-down
+george-end,jerry,"What's up, George?",skeptical,arms-down
+george-end,george,Why are belts still a thing? ,angry,arms-down
 george-end,george,"Here we are, living in the twenty-first century, yet we rely on an expensive piece of rope to keep up our pants",neutral,arms-down
 george-end,jerry,Is this really what you’re calling me for?,sarcastic,arms-down
 george-end,george,"I’m bored, walking outside, you could at least humor me...",neutral,arms-down
 george-end,george,Hey! I see something going on in central park. Throw on the TV!,happy,arms-down
 george-end,jerry,"alright, just give me a second here",neutral,arms-down
-george-end2,reporter,"""...as they continue to rally and dispute an alleged corrupt election over two years ago""",neutral,arms-down
+george-end2,reporter,"""...as they continue to rally and dispute an alleged corrupt election, over two years ago""",neutral,arms-down
 george-end2,george,"...PB, I see PB on their jackets! It’s the Proud Balds, i'm getting in on this! ",neutral,arms-down
 george-end2,jerry,"George, that’s a far-right protest!",shocked,arms-up
 george-end2,george,It’s hard to hear you over the crowd Jerry...Karl's here!,happy,arms-down
-george-end2,george,"...can you see me Jerry? This is amazing, look at all the people.",happy,arms-down
+george-end2,george,"...can you see me Jerry? This is amazing, look at all the people!",happy,arms-down
 george-end2,jerry,"George, get out of there!",shocked,arms-up
 george-end2,george,"Jerry i’m waving with a stick Karl gave me, I'M ON TV! CAN YOU SEE ME JERRY!?",happy,arms-down
 george-end3,jerry,Well... George is cancelled...,sarcastic,arms-down

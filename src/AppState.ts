@@ -8,11 +8,11 @@ import Commercial from './classes/Commercial'
 export default class AppState {
 
   characters = {
-    jerry: new Character("jerry", 20, 0),
-    george: new Character("george", 30, 0),
-    elaine: new Character("elaine", 60, 0),
-    kramer: new Character("kramer", 10, 0),
-    newman: new Character("newman", 30, 0)
+    jerry: new Character("jerry", -60, 60),
+    george: new Character("george", -50, 60),
+    elaine: new Character("elaine", -40, 60),
+    kramer: new Character("kramer", -70, 60),
+    newman: new Character("newman", -50, 60)
   }
 
   charactersInScene: Character[] = []
@@ -38,8 +38,6 @@ export default class AppState {
   isPaused: boolean = false
 
   constructor() {
-
-    this.charactersInScene = []
 
     /* CSV Loading */
     let events = httpGet('./data/TOJAM2021 - Seinfeld 2022 - Events.csv')

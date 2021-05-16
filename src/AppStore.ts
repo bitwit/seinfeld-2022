@@ -54,6 +54,9 @@ export default new Vuex.Store({
       state.currentSceneIndex++
       state.progress = 0
       state.charactersInScene = []
+      for(let character of Object.values(state.characters)) {
+        character.resetPosture()
+      }
       state.eventPresentationQueue = state.events.filter((x) => { return x.scene == state.currentSceneIndex })
       console.log(`events in scene ${state.currentSceneIndex} > ${state.eventPresentationQueue.length}`)
       if (state.eventPresentationQueue.length == 0) {
@@ -107,6 +110,11 @@ export default new Vuex.Store({
         state.currentlyDisplayedEvent = null
       }
 
+      //reset body expression after all events
+      for(let character of Object.values(state.characters)) {
+        character.bodyExpression = "arms-down";
+      }
+
       if (state.currentDialogueQueue.length > 0) {
         while (true) {
           let nextDialogue = state.currentDialogueQueue.shift() || null
@@ -116,6 +124,11 @@ export default new Vuex.Store({
               let characters: any = state.characters
               let character: Character = characters[nextDialogue.character]
               character.expression = nextDialogue.expression
+            }
+            if (nextDialogue.bodyExpression) {
+              let characters: any = state.characters
+              let character: Character = characters[nextDialogue.character]
+              character.bodyExpression = nextDialogue.bodyExpression
             }
             if (nextDialogue.says) {
               break
