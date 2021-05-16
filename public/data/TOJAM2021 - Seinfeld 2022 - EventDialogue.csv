@@ -27,7 +27,7 @@ elaine-intro2,george,My friend Karl is single,neutral,arms-down
 elaine-intro2,elaine,Who’s Karl?,sarcastic,arms-down
 kramer-intro,kramer,"Hey, Jerry. Do have a big bag or satchel. Something that can hold a lot of stuff... you know?",neutral,arms-right
 kramer-intro,george,"Hi, Kramer!",happy,arms-down
-kramer-intro,kramer,yah.. about that bag?,neutral,arms-down
+kramer-intro,kramer,..yah.. about that bag?,neutral,arms-down
 kramer-intro,jerry,What do you need it for?  I probably have something laying around,neutral,arms-right
 kramer-intro,kramer,"Well, you know, Newman’s been overloaded with his mail deliveries.  Everyone ordering online and all. So I’m helping him out!",happy,arms-down
 kramer-intro,elaine,"Don’t they pay people for that, why do you need to help him?",neutral,arms-down
@@ -41,7 +41,7 @@ kramer-intro1,elaine,Who knows...,sarcastic,arms-down
 newman-intro ,newman,Hello....Jerry...,angry,arms-down
 newman-intro ,jerry,Hello....Newman...,skeptical,arms-down
 newman-intro ,newman,"Kramer, what's taking you so long?",neutral,arms-left
-newman-intro ,kramer,"i'm coming, i'm coming!",angry,arms-up
+newman-intro ,kramer,I'm coming! i'm coming!,angry,arms-up
 ,,,,
 elaine-mid,jerry,...I thought you and Puddy got back during the lockdowns. Whatever happened to that?,neutral,arms-down
 elaine-mid,elaine,What happened!? Puddy happened! What do you think HAPPENED!?,angry,arms-up
@@ -62,7 +62,7 @@ george-mid,george,"Say what you want Elaine, these are good people. We’re Prou
 george-mid,elaine,"See what I mean Jerry, it’s all nut jobs out there... I don’t even know why I bother anymore...",angry,arms-down
 george-mid,george,"You should meet my new friends, Elaine, you might like one of them. We lift each other up!",neutral,arms-left
 george-mid,elaine,"Sure, George...nothing's more arousing than men banding together over perceived inadequacies. My ovaries ache just thinking about it",sarcastic,arms-down
-kramer-mid,jerry,do you hear that?,neutral,arms-down
+kramer-mid,jerry,Do you hear that?,neutral,arms-down
 kramer-mid,george,Elaine’s ovaries?,neutral,arms-down
 kramer-mid,jerry,No... the window...,neutral,arms-down
 kramer-mid,elaine,...it sounds like Kramer yelling!?,angry,arms-down
@@ -82,14 +82,14 @@ kramer-end,jerry,"You might want to lay low for a bit, none of this sounds okay"
 kramer-end,kramer,Jerry... if they want to jail me for standing up for the establishment...,neutral,arms-down
 kramer-end,kramer,...THEN THIS ISN'T AMERICA!,angry,arms-up
 kramer-end,jerry,Where we the cops during all this?,shocked,arms-down
-kramer-end,kramer,"oh, they stayed out of the way...",angry,arms-right
+kramer-end,kramer,"..oh, they stayed out of the way...",angry,arms-right
 kramer-end,kramer,...until we hit them with a package...,neutral,arms-down
 kramer-end,jerry,"..and where's Newman, now?",shocked,arms-down
 kramer-end,kramer,"...he’s in jail...oh, yah...  can i borrow a couple thousand bucks?",happy,arms-down
 elaine-end,elaine,Hey's it's me,neutral,arms-down
 elaine-end1,elaine,"I'll never understand texting or men, let alone combining the two!",angry,arms-up
 elaine-end1,jerry,You ended up talking to George's friend?,sarcastic,arms-left
-elaine-end1,kramer,There's something off about that guy,neutral,arms-right
+elaine-end1,kramer,There's something off about that guy...,neutral,arms-right
 elaine-end1,elaine,"He's actually REAALLY nice, but he never picks up his phone...Ever! He only texts!",neutral,arms-right
 elaine-end1,jerry,"Everyone texts, Elaine, how are you not used to this...",neutral,arms-up
 elaine-end1,elaine,"He only uses emojis, Jerry!... He's an Emojer!",angry,arms-up
@@ -107,10 +107,10 @@ george-end,george,"Here we are, living in the twenty-first century, yet we rely 
 george-end,jerry,Is this really what you’re calling me for?,sarcastic,arms-down
 george-end,george,"I’m bored, walking outside, you could at least humor me...",neutral,arms-down
 george-end,george,Hey! I see something going on down the street. Throw on the TV!,happy,arms-down
-george-end,jerry,"alright, just give me a second here",neutral,arms-down
+george-end,jerry,"Alright, just give me a second here",neutral,arms-down
 george-end2,reporter,"""...as they continue to rally and dispute an alleged corrupt election, over two years ago""",neutral,arms-down
 george-end2,kramer,"..oh, come on. REALLY!!",angry,arms-up
-george-end2,jerry,what now?,shocked,arms-down
+george-end2,jerry,What now?,shocked,arms-down
 george-end2,kramer,That's in the way of my route!  Will their oppression of the mail system ever end!,angry,arms-left
 george-end2,george,"...PB, I see PB on their jackets! It’s the Proud Balds, i'm getting in on this! ",neutral,arms-down
 george-end2,jerry,"George, that’s a far-right protest!",shocked,arms-up

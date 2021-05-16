@@ -39,7 +39,7 @@ import Apartment from './components/Apartment.vue'
 import Dialogue from './components/Dialogue.vue'
 import Commercial from './components/Commercial.vue'
 
-let preloadedImages = [
+let preloadedImageNames = [
 "apartment-bg.png",
 "apartment-couch.png",
 "body-arms-down.png",
@@ -66,12 +66,15 @@ let preloadedImages = [
 "kramer-neutral.png",
 "logo.png",
 "newman-neutral.png",
+"newman-angry.png",
 "reporter-neutral.png",
 "tv-and-reporter.png",
 "tv.png",
 "window-closed.png",
 "window-open.png"
 ];
+
+let preloadedImages: HTMLElement[] = []
 
 export default Vue.extend({
   name: 'App',
@@ -84,6 +87,11 @@ export default Vue.extend({
     Apartment,
     Dialogue,
     Commercial
+  },
+  data: function() {
+    return {
+      images: []
+    }
   },
  created: function () {
     document.addEventListener('keydown', (e) => {
@@ -107,10 +115,12 @@ export default Vue.extend({
   }),
   methods: {
     preloadImages: function () {
-      for(let imageName of preloadedImages) {
+      let images = preloadedImageNames.map((imageName) => {
         let image = new Image();
         image.src = `/img/${imageName}`
-      }
+        return image
+      })
+      preloadedImages = images;
     },
     switchView: function (viewName: string) {
       this.$store.commit('switchView', viewName)
