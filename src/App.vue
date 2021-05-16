@@ -20,7 +20,7 @@
       </div>
     </div>
 
-  </div>
+</div>
 </template>
 
 <script lang="ts">
@@ -163,9 +163,26 @@ div.modal-container {
   justify-content: center;
 }
 
+ .dimensions-warning {
+    display: none;
+  }
+
 @media only screen and (max-width: 1024px) {
   #app {
     font-size: em(10)
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .apartment-scene, 
+  .announcements, 
+  .dialogues, 
+  .commercials, 
+  .modal-container {
+    display: none !important;
+  }
+  .dimensions-warning {
+    display: block !important;
   }
 }
 
