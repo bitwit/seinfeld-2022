@@ -31,11 +31,11 @@ kramer-intro,kramer,..yah.. about that bag?,neutral,arms-down
 kramer-intro,jerry,What do you need it for?  I probably have something laying around,neutral,arms-right
 kramer-intro,kramer,"Well, you know, Newman’s been overloaded with his mail deliveries.  Everyone ordering online and all. So I’m helping him out!",happy,arms-down
 kramer-intro,elaine,"Don’t they pay people for that, why do you need to help him?",neutral,arms-down
-kramer-intro,kramer,"Well, this city is being overrun with delivery drivers and amazon trucks, they’ve lost their respect for the noble postman.",angry,arms-up
-kramer-intro,kramer,I’m helping Newman because I believe in our brave postal workers.,neutral,arms-left
-kramer-intro,kramer,Someone has to take a stand….,neutral,arms-right
+kramer-intro,kramer,"Well, this city is being overrun with private delivery services, they’ve lost their respect for the noble postman.",angry,arms-up
+kramer-intro,kramer,I’m helping Newman keep his deliveries on time. These private services are going to put him out of work.,neutral,arms-left
+kramer-intro,kramer,"Next thing you know, the price of shipping goes WAY up. Someone has to take a stand….",neutral,arms-right
 kramer-intro,kramer,It’s not like George is going to do anything about it!,angry,arms-down
-kramer-intro,george,"Hey, I don’t deserve any of this. I’ve got new friends",angry,arms-up
+kramer-intro,george,"Hey, I don’t need this. I’ve got new friends.",angry,arms-up
 kramer-intro1,kramer,Whats up with George?,neutral,arms-down
 kramer-intro1,elaine,Who knows...,sarcastic,arms-down
 newman-intro ,newman,Hello....Jerry...,angry,arms-down
@@ -72,30 +72,30 @@ kramer-mid3,jerry,....that’s enough of that,neutral,arms-down
 ,,,,
 kramer-end,kramer,"...so Newman’s got this guy pinned up against the passenger seat, right....then two more Amazon trucks show up!",happy,arms-up
 kramer-end,kramer,"Well, now I know.... it’s either us or them.",happy,arms-right
-kramer-end,jerry,"Kramer, that's insane!...",shocked,arms-left
+kramer-end,jerry,"Kramer, this is out of control!...",shocked,arms-left
 kramer-end,kramer,...so there I am WHIPPING parcel after parcel out of the truck trying to slow down the other trucks..,angry,arms-left
 kramer-end,jerry,NEWMAN WAS STILL DRIVING?,shocked,arms-up
 kramer-end,kramer,"The mail waits for no one Jerry, NO ONE",angry,arms-up
 kramer-end,jerry,But doesn’t amazon use USPS for some of their deliveries?,neutral,arms-down
 kramer-end,kramer,"Jerry, you said it yourself! ...They USE the USPS and fat-cat Bezos laughs all the way to the bank",angry,arms-right
 kramer-end,jerry,"You might want to lay low for a bit, none of this sounds okay",shocked,arms-down
-kramer-end,kramer,Jerry... if they want to jail me for standing up for the establishment...,neutral,arms-down
+kramer-end,kramer,Jerry... if they want to jail me for standing up for affordable delivery...,neutral,arms-down
 kramer-end,kramer,...THEN THIS ISN'T AMERICA!,angry,arms-up
-kramer-end,jerry,Where we the cops during all this?,shocked,arms-down
+kramer-end,jerry,Where were the cops during all this?,shocked,arms-down
 kramer-end,kramer,"..oh, they stayed out of the way...",angry,arms-right
 kramer-end,kramer,...until we hit them with a package...,neutral,arms-down
 kramer-end,jerry,"..and where's Newman, now?",shocked,arms-down
-kramer-end,kramer,"...he’s in jail...oh, yah...  can i borrow a couple thousand bucks?",happy,arms-down
+kramer-end,kramer,"...he’s in jail...oh, yah...  can you help bail him out?",happy,arms-down
 elaine-end,elaine,Hey's it's me,neutral,arms-down
 elaine-end1,elaine,"I'll never understand texting or men, let alone combining the two!",angry,arms-up
 elaine-end1,jerry,You ended up talking to George's friend?,sarcastic,arms-left
 elaine-end1,kramer,There's something off about that guy...,neutral,arms-right
 elaine-end1,elaine,"He's actually REAALLY nice, but he never picks up his phone...Ever! He only texts!",neutral,arms-right
 elaine-end1,jerry,"Everyone texts, Elaine, how are you not used to this...",neutral,arms-up
-elaine-end1,elaine,"He only uses emojis, Jerry!... He's an Emojer!",angry,arms-up
+elaine-end1,elaine,"He only uses emojis, Jerry!... He's an 'Emojer'!",angry,arms-up
 elaine-end1,kramer,...that sounds kinda fun...,,arms-left
 elaine-end1,elaine,KRAMER! It's the worst!,angry,arms-up
-elaine-end1,elaine,"I tried to ask him to stop and all I get is a ""waving"" hand... what does that even mean!?",angry,arms-up
+elaine-end1,elaine,"I told him to stop and speak in sentences. Then, all I get is a ""waving hand"" emoji... what does that even mean!?",angry,arms-up
 elaine-end1,jerry,I'm pretty sure you got emoji dumped...,sarcastic,arms-down
 george-end,george,It’s George,neutral,arms-down
 george-end,jerry,"I know it's you George, you're in my iPhone",sarcastic,arms-down
@@ -105,13 +105,13 @@ george-end,jerry,"What's up, George?",skeptical,arms-down
 george-end,george,Why are belts still a thing? ,angry,arms-down
 george-end,george,"Here we are, living in the twenty-first century, yet we rely on an expensive piece of rope to keep up our pants",neutral,arms-down
 george-end,jerry,Is this really what you’re calling me for?,sarcastic,arms-down
-george-end,george,"I’m bored, walking outside, you could at least humor me...",neutral,arms-down
+george-end,george,"I’m bored, walking outside, I thought you could put that in your routine...",neutral,arms-down
 george-end,george,Hey! I see something going on down the street. Throw on the TV!,happy,arms-down
 george-end,jerry,"Alright, just give me a second here",neutral,arms-down
 george-end2,reporter,"""...as they continue to rally and dispute an alleged corrupt election, over two years ago""",neutral,arms-down
 george-end2,kramer,"..oh, come on. REALLY!!",angry,arms-up
 george-end2,jerry,What now?,shocked,arms-down
-george-end2,kramer,That's in the way of my route!  Will their oppression of the mail system ever end!,angry,arms-left
+george-end2,kramer,That's in the way of Newman's postal route and I'm still delivering packages later! Will the hatred of the mail system ever end!,angry,arms-left
 george-end2,george,"...PB, I see PB on their jackets! It’s the Proud Balds, i'm getting in on this! ",neutral,arms-down
 george-end2,jerry,"George, that’s a far-right protest!",shocked,arms-up
 george-end2,elaine,Are you kidding me!? IS THAT KARL?,angry,arms-up
@@ -119,5 +119,5 @@ george-end2,george,It’s hard to hear you over the crowd Jerry...Karl's here!,h
 george-end2,kramer,I told you he was bad news...,neutral,arms-right
 george-end2,george,"...can you see me Jerry? This is amazing, look at all the people!",happy,arms-down
 george-end2,jerry,"George, get out of there!",shocked,arms-up
-george-end2,george,"Jerry i’m waving with a stick Karl gave me, I'M ON TV! CAN YOU SEE ME JERRY!?",happy,arms-down
+george-end2,george,"Karl just handed me a torch, I'M ON TV! CAN YOU SEE ME JERRY!?",happy,arms-down
 george-end3,jerry,Well... George is cancelled...,sarcastic,arms-down

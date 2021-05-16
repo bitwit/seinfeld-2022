@@ -45,7 +45,7 @@ export default Vue.component('character', {
       }
     },
     additionalTopOffset: function() {
-      return this.character.isAtTelevision ? 100 : 0
+      return this.character.isAtTelevision ? 115 : 0
     }
   }),
   methods: {
