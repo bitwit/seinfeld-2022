@@ -1,11 +1,11 @@
 eventId,character,says,expression,bodyExpression
-george-intro,jerry,yeah?,neutral,arms-down
-george-intro,george,it's george,neutral,arms-down
-george-intro,jerry,come on up,neutral,arms-down
+george-intro,jerry,Yeah?,neutral,arms-down
+george-intro,george,It's george,neutral,arms-down
+george-intro,jerry,Come on up,neutral,arms-down
 george-intro1,george,"Jerry, i’m doing it, i’m making new friends",happy,arms-up
 george-intro1,jerry,...and yet here you are... in my apartment,sarcastic,arms-left
 george-intro1,george,"You know, it’s not easy coming out of a pandemic and meeting new people. ",neutral,arms-down
-george-intro1,jerry,who’s the lucky guy?,neutral,arms-down
+george-intro1,jerry,Who’s the lucky guy?,neutral,arms-down
 george-intro1,george,...so i’m just walking down Houston street and this guy flashes me a friendly wave and just sparks up conversation. ,happy,arms-right
 george-intro1,jerry,...completely normal thing for a stranger to do.,sarcastic,arms-down
 george-intro1,george,He just wanted to share some information. He chairs a group for guys like us.,happy,arms-up
@@ -37,8 +37,8 @@ kramer-intro,kramer,Someone has to take a stand….,neutral,arms-right
 kramer-intro,kramer,It’s not like George is going to do anything about it!,angry,arms-down
 kramer-intro,george,"Hey, I don’t deserve any of this. I’ve got new friends",angry,arms-up
 kramer-intro1,kramer,Whats up with George?,neutral,arms-down
-kramer-intro1,elaine,who knows...,sarcastic,arms-down
-newman-intro ,newman,Hello....Jerry...,neutral,arms-down
+kramer-intro1,elaine,Who knows...,sarcastic,arms-down
+newman-intro ,newman,Hello....Jerry...,angry,arms-down
 newman-intro ,jerry,Hello....Newman...,skeptical,arms-down
 newman-intro ,newman,"Kramer, what's taking you so long?",neutral,arms-left
 newman-intro ,kramer,"i'm coming, i'm coming!",angry,arms-up
@@ -58,7 +58,7 @@ george-mid,george,"I gotta tell you, this is more of a movement than I thought. 
 george-mid,george,"I’m oozing confidence Jerry, it’s seeping out of me. I have a community!",happy,arms-right
 george-mid,jerry,You might want to get that seeping thing looked at,sarcastic,arms-left
 george-mid,elaine,...you know Manson had a community,sarcastic,arms-right
-george-mid,george,"Say what you want Elaine, these are good people. We’re Proud Balds!",neutral,arms-left
+george-mid,george,"Say what you want Elaine, these are good people. We’re Proud Balds!",neutral,arms-up
 george-mid,elaine,"See what I mean Jerry, it’s all nut jobs out there... I don’t even know why I bother anymore...",angry,arms-down
 george-mid,george,"You should meet my new friends, Elaine, you might like one of them. We lift each other up!",neutral,arms-left
 george-mid,elaine,"Sure, George...nothing's more arousing than men banding together over perceived inadequacies. My ovaries ache just thinking about it",sarcastic,arms-down
