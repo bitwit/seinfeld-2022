@@ -19,8 +19,9 @@ export default Vue.component('character', {
   computed: Vuex.mapState({
     characterStyles: function () {
       return {
-        top: `130px`,
-        right: `${100 + (this.calculatedIndex * 220)}px`
+        top: `${130 + this.additionalTopOffset}px`,
+        right: `${100 + (this.calculatedIndex * 220)}px`,
+        zIndex: `${this.character.isAtTelevision ? 100 : 1}`
       }
     },
     headStyles: function () {
@@ -32,9 +33,16 @@ export default Vue.component('character', {
     calculatedIndex: function() {
       if(this.character.isAtWindow) {
         return 4
-      } else {
+      } 
+      if(this.character.isAtTelevision) {
+        return 2
+      }
+      else {
         return this.index
       }
+    },
+    additionalTopOffset: function() {
+      return this.character.isAtTelevision ? 100 : 0
     }
   }),
   methods: {

@@ -4,7 +4,7 @@
         class="character-head" 
         :src="'./img/' + dialogue.character + '-' + imageName + '.png'"
         />
-      <p class="description">{{dialogue.says}}</p>
+      <p class="description">&ldquo;{{dialogue.says}}&rdquo;</p>
 
       <button :class="typeClass" @click="acceptEvent()" class="accept">
         <span class="title">Next</span>

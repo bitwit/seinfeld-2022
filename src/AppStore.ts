@@ -90,7 +90,6 @@ export default new Vuex.Store({
           state.charactersInScene = state.charactersInScene.filter((x) => { return x.id != event.character })
         }
         if (event.moveToWindow) {
-          console.log("move", event.character, "to window")
           let characters: any = state.characters
           let character: Character = characters[event.character]
           character.isAtWindow = true
@@ -98,6 +97,11 @@ export default new Vuex.Store({
           let characters: any = state.characters
           let character: Character = characters[event.character]
           character.isAtWindow = false
+        }
+        if(event.moveToTelevision) {
+          let characters: any = state.characters
+          let character: Character = characters[event.character]
+          character.isAtTelevision = true
         }
 
         state.currentlyDisplayedEvent = null

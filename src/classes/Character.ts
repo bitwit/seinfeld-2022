@@ -4,6 +4,7 @@ export default class Character {
   headTopOffset: number = 0
   headLeftOffset: number = 0
   isAtWindow: boolean = false
+  isAtTelevision: boolean = false
 
   constructor(
     id: string, 

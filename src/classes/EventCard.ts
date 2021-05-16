@@ -11,6 +11,7 @@ export default class Event {
   leaves: boolean
   moveToWindow: boolean
   moveFromWindow: boolean
+  moveToTelevision: boolean
 
   constructor(data: any) {
     this.id = data.id
@@ -23,5 +24,6 @@ export default class Event {
     this.leaves = (data.leaves == "1")
     this.moveToWindow = (data.moveToWindow == "1")
     this.moveFromWindow = (data.moveFromWindow == "1")
+    this.moveToTelevision = (data.moveToTelevision == "1")
   }
 }
