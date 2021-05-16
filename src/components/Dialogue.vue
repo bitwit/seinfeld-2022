@@ -127,10 +127,4 @@ div.dialogue {
   background: -ms-linear-gradient(left, #ffffff 0%, #e2e2e2 25%);
   background: linear-gradient(to right, #ffffff 0%, #e2e2e2 25%); }
 
-@media only screen and (max-width: 1024px) {
-  .dialogue {
-    font-size: em(9)
-  }
-}
-
 </style>

@@ -46,17 +46,19 @@ $browser-context: 16; // Default
 
 .apartment-scene {
   background: url(../../public/img/apartment-bg.png) no-repeat;
+  background-size: contain;
   width: 100%;
   height: 100%;
-  background-size: cover;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
 }
 .couch {
   background: url(../../public/img/apartment-couch.png) no-repeat;
-  width: em(1000);
-  height: em(562.5);
+  // width: em(1000);
+  // height: em(562.5);
+  width: 100%;
+  height: 100%;
   background-size: cover;
 
   position: relative;
@@ -69,12 +71,6 @@ $browser-context: 16; // Default
 .character-group-enter, .character-group-leave-to {
   opacity: 0;
   transform: translateX(em(50));
-}
-
-@media only screen and (max-width: 1024px) {
-  .apartment-scene {
-    font-size: em(10)
-  }
 }
 
 </style>

@@ -11,9 +11,7 @@
       <commercial :commercial="currentlyDisplayedCommercial" @accept-event="acceptEvent()" />
     </div>
 
-    <div class="main-view view-container">
-        <apartment />
-    </div><!-- main view -->
+    <apartment />
 
     <div v-if="currentView == 'intro' || currentView == 'end'" class="modal-sections">
       <div class="modal-container">
@@ -152,9 +150,9 @@ div.modal-sections {
 div.modal-container {
   box-sizing: border-box;
   margin: 2% auto 0;
-  border-width: 0.625em;
+  border-width: em(10);
   border-style: solid;
-  padding: 0 2.5em;
+  padding: 0 em(40);
   width: 66%;
   height: 75%;
   background-color: rgba($color: #ffffff, $alpha: 0.8);
@@ -163,6 +161,12 @@ div.modal-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  #app {
+    font-size: em(10)
+  }
 }
 
 </style>

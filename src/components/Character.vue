@@ -19,15 +19,15 @@ export default Vue.component('character', {
   computed: Vuex.mapState({
     characterStyles: function () {
       return {
-        top: `${130 + this.additionalTopOffset}px`,
-        right: `${100 + (this.calculatedIndex * 220)}px`,
+        top: this.em(130 + this.additionalTopOffset),
+        right: this.em(100 + (this.calculatedIndex * 220)),
         zIndex: `${this.character.isAtTelevision ? 100 : 1}`
       }
     },
     headStyles: function () {
       return {
-        top: `${this.character.headTopOffset}px`,
-        left: `${this.character.headLeftOffset}px`,
+        top: this.em(this.character.headTopOffset),
+        left: this.em(this.character.headLeftOffset)
       }
     },
     calculatedIndex: function() {
@@ -46,7 +46,9 @@ export default Vue.component('character', {
     }
   }),
   methods: {
-
+    em: function(pixels: number): string {
+      return `${pixels / 16}em`
+    }
   }
 })
 </script>
@@ -76,10 +78,4 @@ $browser-context: 16; // Default
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .character {
-    font-size: em(8);
-    background-size: cover;
-  }
-}
 </style>

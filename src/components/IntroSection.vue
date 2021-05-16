@@ -58,13 +58,4 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .intro-wrapper {
-    font-size: em(10)
-  }
-  p.intro-description {
-    display: none;
-  }
-}
-
 </style>
