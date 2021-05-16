@@ -8,6 +8,8 @@
     <button @click="restart()" class="game-start">
       <span class="title">Restart</span>
     </button>
+    <p>Developed by <a target="blank" href="https://twitter.com/kylnew">Kyle Newsome</a> &amp; <a target="blank" href="https://twitter.com/chiggensprinkle">Tyler Newsome</a></p>
+    <p>for Toronto Game Jam 2021 - Feels Like a Rerun</p>
   </div>
 </template>
 
