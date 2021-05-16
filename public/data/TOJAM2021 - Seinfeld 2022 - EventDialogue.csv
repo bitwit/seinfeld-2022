@@ -6,7 +6,7 @@ george-intro1,george,"Jerry, i’m doing it, i’m making new friends",happy,arm
 george-intro1,jerry,...and yet here you are... in my apartment,sarcastic,arms-left
 george-intro1,george,"You know, it’s not easy coming out of a pandemic and meeting new people. ",neutral,arms-down
 george-intro1,jerry,who’s the lucky guy?,neutral,arms-down
-george-intro1,george,so i’m just walking down Houston street and this guy flashes me a friendly wave and just sparks up conversation. ,happy,arms-right
+george-intro1,george,...so i’m just walking down Houston street and this guy flashes me a friendly wave and just sparks up conversation. ,happy,arms-right
 george-intro1,jerry,...completely normal thing for a stranger to do.,sarcastic,arms-down
 george-intro1,george,He just wanted to share some information. He chairs a group for guys like us.,happy,arms-up
 george-intro1,george,WE'RE BALD AND SICK OF HOW THE MEDIA PORTRAYS US!,angry,arms-right
@@ -15,7 +15,7 @@ george-intro1,george,"That's different! They get together every week. I’m join
 elaine-intro,jerry,That's probably Elaine,neutral,arms-down
 elaine-intro,elaine,It's me,neutral,arms-down
 elaine-intro,george,It's her,neutral,arms-down
-elaine-intro2,elaine,I’m over it! ,neutral,arms-up
+elaine-intro2,elaine,I’m over it! ,angry,arms-up
 elaine-intro2,george,...over what?,neutral,arms-down
 elaine-intro2,elaine,"There’s not a decent guy left in new york, every bozo in this city settled during the pandemic",angry,arms-down
 elaine-intro2,george,..oh..,neutral,arms-down
@@ -24,13 +24,13 @@ elaine-intro2,elaine,"Good for you, George...but what about me!",neutral,arms-do
 elaine-intro2,jerry,Why don’t you try the guys on one of these dating apps?,neutral,arms-left
 elaine-intro2,elaine,You think I haven’t? They're all trump supporters and anti-vaxxers. It's just Parler with unsolicited dick pics,angry,arms-up
 elaine-intro2,george,My friend Karl is single,neutral,arms-down
-elaine-intro2,elaine,who’s Karl?,sarcastic,arms-down
-kramer-intro,kramer,"Hey, Jerry. Do have a big bag or satchel. Something that can hold a lot of stuff, you know?",neutral,arms-right
+elaine-intro2,elaine,Who’s Karl?,sarcastic,arms-down
+kramer-intro,kramer,"Hey, Jerry. Do have a big bag or satchel. Something that can hold a lot of stuff... you know?",neutral,arms-right
 kramer-intro,george,"Hi, Kramer!",happy,arms-down
 kramer-intro,kramer,yah.. about that bag?,neutral,arms-down
 kramer-intro,jerry,What do you need it for?  I probably have something laying around,neutral,arms-right
 kramer-intro,kramer,"Well, you know, Newman’s been overloaded with his mail deliveries.  Everyone ordering online and all. So I’m helping him out!",happy,arms-down
-kramer-intro,elaine,"Don’t they pay people for that, why do you need to help him?",neutral,arms-right
+kramer-intro,elaine,"Don’t they pay people for that, why do you need to help him?",neutral,arms-down
 kramer-intro,kramer,"Well, this city is being overrun with delivery drivers and amazon trucks, they’ve lost their respect for the noble postman.",angry,arms-up
 kramer-intro,kramer,I’m helping Newman because I believe in our brave postal workers.,neutral,arms-left
 kramer-intro,kramer,Someone has to take a stand….,neutral,arms-right
@@ -38,10 +38,10 @@ kramer-intro,kramer,It’s not like George is going to do anything about it!,ang
 kramer-intro,george,"Hey, I don’t deserve any of this. I’ve got new friends",angry,arms-up
 kramer-intro1,kramer,Whats up with George?,neutral,arms-down
 kramer-intro1,elaine,who knows...,sarcastic,arms-down
-newman-intro ,newman,Hello....Jerry...,angry,arms-down
+newman-intro ,newman,Hello....Jerry...,neutral,arms-down
 newman-intro ,jerry,Hello....Newman...,skeptical,arms-down
 newman-intro ,newman,"Kramer, what's taking you so long?",neutral,arms-left
-newman-intro ,kramer,"i'm coming, i'm coming!",neutral,arms-down
+newman-intro ,kramer,"i'm coming, i'm coming!",angry,arms-up
 ,,,,
 elaine-mid,jerry,...I thought you and Puddy got back during the lockdowns. Whatever happened to that?,neutral,arms-down
 elaine-mid,elaine,What happened? Puddy happened! What do you think HAPPENED?,angry,arms-up
