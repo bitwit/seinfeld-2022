@@ -1,6 +1,6 @@
 eventId,character,says,expression,bodyExpression
 george-intro,jerry,Yeah?,neutral,arms-down
-george-intro,george,It's george,neutral,arms-down
+george-intro,george,It's George,neutral,arms-down
 george-intro,jerry,Come on up,neutral,arms-down
 george-intro1,george,"Jerry, i’m doing it, i’m making new friends",happy,arms-up
 george-intro1,jerry,...and yet here you are... in my apartment,sarcastic,arms-left
@@ -17,7 +17,7 @@ elaine-intro,elaine,It's me,neutral,arms-down
 elaine-intro,george,It's her,neutral,arms-down
 elaine-intro2,elaine,I’m over it! ,angry,arms-up
 elaine-intro2,george,...over what?,neutral,arms-down
-elaine-intro2,elaine,"There’s not a decent guy left in new york, every bozo in this city settled during the pandemic",angry,arms-down
+elaine-intro2,elaine,"There’s not a decent guy left in New York, every bozo in this city settled during the pandemic",angry,arms-down
 elaine-intro2,george,..oh..,neutral,arms-down
 elaine-intro2,jerry,George made a new friend,neutral,arms-down
 elaine-intro2,elaine,"Good for you, George...but what about me!",neutral,arms-down
@@ -76,7 +76,7 @@ kramer-end,jerry,"Kramer, this is out of control!...",shocked,arms-left
 kramer-end,kramer,...so there I am WHIPPING parcel after parcel out of the truck trying to slow down the other trucks..,angry,arms-left
 kramer-end,jerry,NEWMAN WAS STILL DRIVING?,shocked,arms-up
 kramer-end,kramer,"The mail waits for no one Jerry, NO ONE",angry,arms-up
-kramer-end,jerry,But doesn’t amazon use USPS for some of their deliveries?,neutral,arms-down
+kramer-end,jerry,But doesn’t Amazon use USPS for some of their deliveries?,neutral,arms-down
 kramer-end,kramer,"Jerry, you said it yourself! ...They USE the USPS and fat-cat Bezos laughs all the way to the bank",angry,arms-right
 kramer-end,jerry,"You might want to lay low for a bit, none of this sounds okay",shocked,arms-down
 kramer-end,kramer,Jerry... if they want to jail me for standing up for affordable delivery...,neutral,arms-down
