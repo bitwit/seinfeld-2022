@@ -72,7 +72,8 @@ div.announcement {
 
   img.event-image {
     display: block;
-    max-width: em(80);
+    max-width: em(160);
+    max-height: em(120);
     margin: 0 auto;
   }
 

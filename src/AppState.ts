@@ -11,7 +11,8 @@ export default class AppState {
     jerry: new Character("jerry", 20, 0),
     george: new Character("george", 30, 0),
     elaine: new Character("elaine", 60, 0),
-    kramer: new Character("kramer", 10, 0)
+    kramer: new Character("kramer", 10, 0),
+    newman: new Character("newman", 30, 0)
   }
 
   charactersInScene: Character[] = []
